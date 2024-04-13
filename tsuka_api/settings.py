@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r*jwv@q30(7m^h_+dejk0ws_1bynk$c2mcufpj@^ciuuu1ke1f
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'tsuka.Users'
 
 # Application definition
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'tsuka_api.wsgi.application'
 DATABASES = {
       'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'django',  
+        'NAME': 'tsuka_db',  
         'USER': 'root',  
         'PASSWORD': '',  
         'HOST': '127.0.0.1',  
